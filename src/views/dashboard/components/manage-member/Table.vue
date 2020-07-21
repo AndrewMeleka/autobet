@@ -1,5 +1,10 @@
 <template>
-  <v-data-table :headers="headers" :items="items" :items-per-page="5" class="elevation-5">
+  <v-data-table
+    :headers="headers"
+    :items="items"
+    :items-per-page="5"
+    class="elevation-5"
+  >
     <!-- Modify Column -->
     <template v-slot:item.modify>
       <Dialog title="Edit user" width="800" fullscreen>

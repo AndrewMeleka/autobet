@@ -29,7 +29,11 @@
         <v-text-field label="How we do know us?" required></v-text-field>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-text-field label="More" placeholder="Additional if not left blank" required></v-text-field>
+        <v-text-field
+          label="More"
+          placeholder="Additional if not left blank"
+          required
+        ></v-text-field>
       </v-col>
       <v-col cols="12">
         <v-text-field label="Password" required></v-text-field>
@@ -52,5 +56,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

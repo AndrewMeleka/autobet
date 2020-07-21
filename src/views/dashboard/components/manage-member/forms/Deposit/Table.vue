@@ -1,5 +1,10 @@
 <template>
-  <v-data-table :headers="headers" :items="desserts" class="elevation-10" :items-per-page="5"></v-data-table>
+  <v-data-table
+    :headers="headers"
+    :items="desserts"
+    class="elevation-10"
+    :items-per-page="5"
+  ></v-data-table>
 </template>
 
 <script>

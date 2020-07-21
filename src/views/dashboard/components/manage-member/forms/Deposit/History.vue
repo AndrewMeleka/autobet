@@ -8,7 +8,12 @@
         <v-text-field dense label="Date" readonly outlined></v-text-field>
       </div>
       <div class="filter-btns">
-        <v-btn v-for="(btn, i) in Object.keys(filterBtns)" :key="`b${i}`" outlined>{{ btn }}</v-btn>
+        <v-btn
+          v-for="(btn, i) in Object.keys(filterBtns)"
+          :key="`b${i}`"
+          outlined
+          >{{ btn }}</v-btn
+        >
       </div>
       <v-divider class="my-5"></v-divider>
       <!-- Deposit Table -->
