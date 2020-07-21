@@ -14,16 +14,18 @@
       <v-list dense>
         <v-list-item
           color="primary"
-          v-for="(link,i) in listLinks"
+          v-for="(link, i) in listLinks"
           :key="`l${i}`"
           :to="link.to"
           link
         >
           <v-list-item-action>
-            <v-icon>{{link.icon}}</v-icon>
+            <v-icon>{{ link.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title class="text-capitalize">{{link.label}}</v-list-item-title>
+            <v-list-item-title class="text-capitalize">{{
+              link.label
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

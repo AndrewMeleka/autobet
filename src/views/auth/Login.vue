@@ -6,7 +6,9 @@
           <v-col cols="12" sm="8" md="4">
             <v-card class="elevation-1">
               <v-toolbar dense :elevation="3" flat>
-                <v-toolbar-title class="font-weight-bold primary--text">Login</v-toolbar-title>
+                <v-toolbar-title class="font-weight-bold primary--text"
+                  >Login</v-toolbar-title
+                >
               </v-toolbar>
               <v-card-text class="mt-5">
                 <v-form>
@@ -28,8 +30,12 @@
               </v-card-text>
               <v-card-actions>
                 <div class="actions px-10">
-                  <v-btn color="primary" @click="login" large block rounded>Login</v-btn>
-                  <v-btn color="primary" text large block rounded>forget your password ?</v-btn>
+                  <v-btn color="primary" @click="login" large block rounded
+                    >Login</v-btn
+                  >
+                  <v-btn color="primary" text large block rounded
+                    >forget your password ?</v-btn
+                  >
                 </div>
               </v-card-actions>
             </v-card>
@@ -38,7 +44,13 @@
       </v-container>
     </v-main>
     <!-- alert -->
-    <v-snackbar v-model="alert.status" top right :color="alert.color" :timeout="alert.timeout">
+    <v-snackbar
+      v-model="alert.status"
+      top
+      right
+      :color="alert.color"
+      :timeout="alert.timeout"
+    >
       {{ alert.text }}
       <template v-slot:action="{ attrs }">
         <v-btn dark text v-bind="attrs" @click="alert.status = false">
@@ -48,7 +60,6 @@
     </v-snackbar>
   </v-app>
 </template>
-
 
 <script>
 export default {

@@ -11,7 +11,6 @@
   </v-card>
 </template>
 
-
 <script>
 export default {
   props: {
@@ -22,5 +21,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

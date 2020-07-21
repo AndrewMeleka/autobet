@@ -3,7 +3,13 @@
     <UtilCard title="Affiliate">
       <v-row class="content my-5">
         <v-col class="d-flex align-items-center" cols="6">
-          <v-select v-model="form.bouns" dense :items="bouns" label="Bouns type" outlined></v-select>
+          <v-select
+            v-model="form.bouns"
+            dense
+            :items="bouns"
+            label="Bouns type"
+            outlined
+          ></v-select>
         </v-col>
         <v-col cols="6">
           <v-text-field
@@ -31,7 +37,10 @@
         <v-col cols="12">
           <v-radio-group v-model="form.bounsRadio" :mandatory="false">
             <v-radio label="Bouns for every deposit" value="radio-1"></v-radio>
-            <v-radio label="Bouns for new member promotion only" value="radio-2"></v-radio>
+            <v-radio
+              label="Bouns for new member promotion only"
+              value="radio-2"
+            ></v-radio>
             <v-radio label="First deposit bouns only" value="radio-3"></v-radio>
           </v-radio-group>
         </v-col>
@@ -40,13 +49,31 @@
       <UtilCard class="mb-5" title="condation">
         <v-row>
           <v-col cols="4">
-            <v-text-field v-model="form.condation.low" dense label="The lowest" clearable outlined></v-text-field>
+            <v-text-field
+              v-model="form.condation.low"
+              dense
+              label="The lowest"
+              clearable
+              outlined
+            ></v-text-field>
           </v-col>
           <v-col cols="4">
-            <v-text-field v-model="form.condation.max" dense label="Maximum" clearable outlined></v-text-field>
+            <v-text-field
+              v-model="form.condation.max"
+              dense
+              label="Maximum"
+              clearable
+              outlined
+            ></v-text-field>
           </v-col>
           <v-col cols="4">
-            <v-text-field v-model="form.condation.bouns" dense label="Bouns" clearable outlined></v-text-field>
+            <v-text-field
+              v-model="form.condation.bouns"
+              dense
+              label="Bouns"
+              clearable
+              outlined
+            ></v-text-field>
           </v-col>
         </v-row>
       </UtilCard>

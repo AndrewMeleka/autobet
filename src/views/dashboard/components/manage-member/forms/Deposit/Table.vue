@@ -1,19 +1,5 @@
 <template>
-  <v-data-table
-    :headers="headers"
-    :items="desserts"
-    class="elevation-10"
-    :items-per-page="5"
-  >
-    <!-- Top of table -->
-    <template v-slot:top>
-      <div class="top-h pa-8">
-        <h1>Promotions</h1>
-        <v-spacer></v-spacer>
-        <v-btn color="primary" outlined> <v-icon>mdi-plus</v-icon>Add </v-btn>
-      </div>
-    </template>
-  </v-data-table>
+  <v-data-table :headers="headers" :items="desserts" class="elevation-10" :items-per-page="5"></v-data-table>
 </template>
 
 <script>
